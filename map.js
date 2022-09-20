@@ -1,17 +1,27 @@
 // INPUT: the array of countries from data.js
 // OUTPUT: an array of the names
 // REQS: use .map
+import { countries } from './data';
 
-export const getCountryNames = (countries) => {};
+export function getCountryNames(countries) {
+  countries.map((country) => {
+    return country.name;
+  });
+}
 
 // INPUT: the array of countries from data.js
 // OUTPUT: an array of the names and their iso2 country codes using .map
 // REQS: use .map
 
-export const getCountryCodes = (countries) => {};
+export const getCountryCodes = (countries) => {
+  return countries.map(({ name, iso2 }));
+};
 
 // INPUT: the array of shoes from data.js
 // OUTPUT: an array of the brands
 // REQS: use .map
+import { brands } from './data';
 
-export const getBrands = (brands) => {};
+export const getBrands = (brands) => {
+  return brands.map((brand) => { brands.shoes ;});
+};
